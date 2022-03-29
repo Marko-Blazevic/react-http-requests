@@ -28,10 +28,10 @@ function App() {
         };
       });
       setMovieList(transformedMovies);
-      setIsLoading(false);
     } catch (error) {
       setError(error.message);
     }
+    setIsLoading(false);
   }
 
   let content = '';
